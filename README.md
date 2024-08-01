@@ -19,7 +19,7 @@ the only argument is the characters to show. The default is blank.
 
 You can use the characters below and space.
 ```
- אבגדהוזחטיךכלםמןנסעףפץצקרשת-,.､｡!?｢｣[]()<>#$%&'ABCDEFGHIJKLMNOPQRSTUVWXYZ^`_･*+ｰ=\\/:;@
+ אבגדהוזחטיךכלםמןנסעףפץצקרשת-,.､｡!?｢｣[]()<>#$%&'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ^`_･*+ｰ=\\/:;@
 ```
 
 ## Example
