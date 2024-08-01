@@ -5,10 +5,12 @@ A fork from the Katakana extension.
 
 ## Basic Usage
 ---
+Import extension from https://github.com/shahart/heb-microbit
 
 Method
 ```
 hebrew.showString(string)
+הצג מחרוזת
 ```
 
 - string: characters to show
