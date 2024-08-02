@@ -27,7 +27,7 @@ You can use the characters below and space.
 
 It works.
 ```
-hebrew.showString("שלום")
+hebrew.showString("שלום !")
 ```
 
 ## License
