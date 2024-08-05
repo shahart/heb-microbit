@@ -1,4 +1,7 @@
 namespace hebrew {
+    // let led; // uncomment to be able to run `tsc main.ts`
+    // let basic;
+    let scroll: number
     const hs = [
         [" ", "!", '"', "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/"],
         ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ":", ";", "<", "=", ">", "?"],
@@ -158,7 +161,8 @@ namespace hebrew {
 
     //% blockId=show_strings block="הצג מחרוזת %v"
     export function showString(text: string, time: number = 200): void {
-        let textWorkaround = " " + text + " ";
+        // "הצג טקסט בתצוגה, תו אחד בכל פעם. אם המחרוזת מתאימה על המסך (כלומר הוא אות אחת), אין גלילה."
+        let textWorkaround = text.length == 1 ? text : " " + text + " ";
         let strings: number[][] = []
         for (let c = 0; c < textWorkaround.length; c++) {
             for (let x = 0; x < 8; x++) {
@@ -167,8 +171,10 @@ namespace hebrew {
                         for (let z = 0; z < arr[x][y].length; z++) {
                             strings.push(arr[x][y][4 - z])
                         }
-                        strings.push([0, 0, 0, 0, 0])
-                        strings.push([0, 0, 0, 0, 0])
+                        if (textWorkaround.length > 1) {
+                            strings.push([0, 0, 0, 0, 0])
+                            strings.push([0, 0, 0, 0, 0])
+                        }
                     }
                 }
             }
@@ -194,20 +200,34 @@ namespace hebrew {
                     }
                 }
             }
-            basic.pause(time)
-            for (let x3 = z2; x3 < z2 + 5; x3++) {
-                for (let y3 = 0; y3 < 5; y3++) {
-                    if (x3 >= strings.length) {
-                        if (strings[x3 - strings.length][y3] == 1) {
-                            led.unplot(4 - (x3 - z2), y3)
-                        }
-                    } else {
-                        if (strings[x3][y3] == 1) {
-                            led.unplot(4 - (x3 - z2), y3)
+            if (textWorkaround.length > 1) {
+                basic.pause(scroll || time)
+                for (let x3 = z2; x3 < z2 + 5; x3++) {
+                    for (let y3 = 0; y3 < 5; y3++) {
+                        if (x3 >= strings.length) {
+                            if (strings[x3 - strings.length][y3] == 1) {
+                                led.unplot(4 - (x3 - z2), y3)
+                            }
+                        } else {
+                            if (strings[x3][y3] == 1) {
+                                led.unplot(4 - (x3 - z2), y3)
+                            }
                         }
                     }
                 }
             }
+            else {
+                break
+            }
         }
     }
+
+    // /**
+    //  * SSet scroll time.
+    //  * @param time number of scroll time, eg: 500
+    //  */
+    // //% blockId=set_scrollTime block="השהיה %t"
+    // export function setScrollTime(time: number = 200): void {
+    //     scroll = time
+    // }
 }
