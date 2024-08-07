@@ -159,6 +159,37 @@ namespace hebrew {
         ]
     ]
 
+    //% blockId=show_letter block="הצג אות %v"
+    export function showLetter(text: string): void {
+        if (text.length > 1) {
+            console.log('invalid usage');
+            showString(text);
+        }
+        else {
+            if (text == 'ה') {
+                basic.showLeds(`
+                    # # # # #
+                    . . . . #
+                    # . . . #
+                    # . . . #
+                    # . . . #
+                `)
+            }
+            else if (text == 'ו') {
+                basic.showLeds(`
+                    . . # . .
+                    . . # . .
+                    . . # . .
+                    . . # . .
+                    . . # . .
+                `)
+            }
+            else {
+                basic.showString(text);
+            }
+        }
+    }
+
     //% blockId=show_strings block="הצג מחרוזת %v"
     export function showString(text: string, time: number = 200): void {
         // "הצג טקסט בתצוגה, תו אחד בכל פעם. אם המחרוזת מתאימה על המסך (כלומר הוא אות אחת), אין גלילה."
@@ -224,7 +255,7 @@ namespace hebrew {
 
     // /**
     //  * SSet scroll time.
-    //  * @param time number of scroll time, eg: 500
+    //  * @param time number of scroll time, eg: 200
     //  */
     // //% blockId=set_scrollTime block="השהיה %t"
     // export function setScrollTime(time: number = 200): void {

@@ -2,4 +2,8 @@
 basic.forever(() => {
   basic.showString('.AB cd')
   hebrew.showString('אבגדהוזחטיכךלמםנןסעפףצץקרשת. 12')
+  basic.showString("Aa")
+  hebrew.showLetter("Aa")
+  hebrew.showLetter("ו")
+  hebrew.showLetter("ה")
 })
