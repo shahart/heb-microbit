@@ -1,9 +1,5 @@
 // tests go here; this will not be compiled when this package is used as a library
 basic.forever(() => {
   basic.showString('.AB cd')
-  hebrew.showString('אבגדהוזחטיכךלמםנןסעפףצץקרשת. 12')
-  basic.showString("Aa")
-  hebrew.showLetter("Aa")
-  hebrew.showLetter("ו")
-  hebrew.showLetter("ה")
+  hebrew.showLetters('Aa אבגדהוזחטיכךלמםנןסעפףצץקרשת. 12')
 })
