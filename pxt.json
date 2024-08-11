@@ -1,6 +1,6 @@
 {
     "name": "pxt-hebrew",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Hebrew letters",
     "license": "MIT",
     "dependencies": {
@@ -14,7 +14,7 @@
         "test.ts"
     ],
     "public": true,
-	"supportedTargets": [
+    "supportedTargets": [
         "microbit"
     ]
 }

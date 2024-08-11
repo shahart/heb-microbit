@@ -6,8 +6,8 @@ namespace hebrew {
      * Show string, one letter at a time. That string can include the aleph-bet hebrew's letters.
      * @param text the string to show, eg: שלום
      */
-    //% blockId=show_letter block="הצג אות %v"
-    export function showLetters(text: string): void {
+    //% blockId=show_string block="הצג מחרוזת %v"
+    export function showString(text: string): void {
         for (let c = 0; c < text.length; c++) {
             let found = false;
             for (let y = 0; y < hs.length; y++) {
