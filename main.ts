@@ -1,3 +1,4 @@
+//% color=#0f9c11 icon="\u05d0"
 namespace hebrew {
     let scroll: number
     const hs = [
@@ -158,7 +159,6 @@ namespace hebrew {
     ]
 
     //% blockId=show_string block="הצג מחרוזת %v"
-    //% weight=100 color=#0f9c11 icon="\uf1ab"
     export function showString(text: string, time: number = 200): void {
         // "הצג טקסט בתצוגה, תו אחד בכל פעם. אם המחרוזת מתאימה על המסך (כלומר הוא אות אחת), אין גלילה."
         let textWorkaround = text.length == 1 ? text : " " + text + " ";

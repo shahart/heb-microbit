@@ -3,6 +3,12 @@
 This library make it possible to show characters of Hebrew.
 A fork from the Katakana extension.
 
+#### Works with micro:bit V2
+
+![works with micro:bit V2 only image](/v2-only.png)
+
+Using these blocks requires the micro:bit V2 hardware. If you use any blocks that attempt access flash memory on a micro:bit v1 board, you will see the **927** error code on the screen.
+
 ## Basic Usage
 ---
 Import extension from https://github.com/shahart/heb-microbit
@@ -35,4 +41,4 @@ MIT
 
 ## Supported targets
 
-* for PXT/microbit
+* for PXT/micro:bit (v2 only)
