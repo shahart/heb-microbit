@@ -7,7 +7,7 @@ A fork from the Katakana extension.
 
 ![works with micro:bit V2 only image](/v2-only.png)
 
-Using these blocks requires the micro:bit V2 hardware. If you use any blocks that attempt access flash memory on a micro:bit v1 board, you will see the **927** error code on the screen.
+Using these blocks requires the micro:bit V2 hardware.
 
 ## Basic Usage
 ---
@@ -15,13 +15,10 @@ Import extension from https://github.com/shahart/heb-microbit
 
 Method
 ```
-hebrew.showString(string)
-הצג מחרוזת
+hebrew.showString(text)
 ```
 
-- string: characters to show
-
-the only argument is the characters to show. The default is blank. 
+- text: characters to show
 
 You can use the characters below and space.
 ```
@@ -31,8 +28,8 @@ You can use the characters below and space.
 ## Example
 ---
 
-It works.
 ```
+hebrew.showString("Hello !")
 hebrew.showString("שלום !")
 ```
 
@@ -41,4 +38,4 @@ MIT
 
 ## Supported targets
 
-* for PXT/micro:bit (v2 only)
+* for PXT/micro:bit

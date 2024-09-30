@@ -1,11 +1,8 @@
 {
     "name": "pxt-hebrew",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Hebrew letters. micro:bit (V2) only.",
     "license": "MIT",
-    "disablesVariants": [
-        "mbdal"
-    ],
     "dependencies": {
         "core": "*"
     },

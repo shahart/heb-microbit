@@ -1,6 +1,5 @@
 //% color=#0f9c11 icon="\u05d0"
 namespace hebrew {
-    let scroll: number
     const hs = [
         [" ", "!", '"', "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/"],
         ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ":", ";", "<", "=", ">", "?"],
@@ -158,9 +157,14 @@ namespace hebrew {
         ]
     ]
 
-    //% blockId=show_string block="הצג מחרוזת %v"
-    export function showString(text: string, time: number = 200): void {
-        // "הצג טקסט בתצוגה, תו אחד בכל פעם. אם המחרוזת מתאימה על המסך (כלומר הוא אות אחת), אין גלילה."
+    /**
+     * Display text on the display, one character at a time. If the string fits on the screen (i.e. is one letter), does not scroll.
+     * @param text the text to scroll on the screen, eg: "Hello!"
+     */
+    //% help=hebrew/show-string
+    //% blockId=hebrew_show_string
+    //% block="hebrew_show_string %text"
+    export function showString(text: string): void {
         let textWorkaround = text.length == 1 ? text : " " + text + " ";
         let strings: number[][] = []
         for (let c = 0; c < textWorkaround.length; c++) {
@@ -200,7 +204,7 @@ namespace hebrew {
                 }
             }
             if (textWorkaround.length > 1) {
-                basic.pause(scroll || time)
+                basic.pause(150)
                 for (let x3 = z2; x3 < z2 + 5; x3++) {
                     for (let y3 = 0; y3 < 5; y3++) {
                         if (x3 >= strings.length) {
