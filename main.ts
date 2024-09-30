@@ -163,7 +163,7 @@ namespace hebrew {
      */
     //% help=hebrew/show-string
     //% blockId=hebrew_show_string
-    //% block="hebrew_show_string %text"
+    //% block="%hebrew|show string %text"
     export function showString(text: string): void {
         let textWorkaround = text.length == 1 ? text : " " + text + " ";
         let strings: number[][] = []

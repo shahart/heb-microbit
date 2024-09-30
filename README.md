@@ -1,13 +1,9 @@
-# pxt-hebrew
+# hebrew
 ---
 This library make it possible to show characters of Hebrew.
 A fork from the Katakana extension.
 
-#### Works with micro:bit V2
-
-![works with micro:bit V2 only image](/v2-only.png)
-
-Using these blocks requires the micro:bit V2 hardware.
+#### Using these block requires the micro:bit V2 hardware
 
 ## Basic Usage
 ---

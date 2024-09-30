@@ -1,7 +1,7 @@
 {
-    "name": "pxt-hebrew",
-    "version": "1.0.7",
-    "description": "Hebrew letters. micro:bit (V2) only.",
+    "name": "hebrew",
+    "version": "1.0.8",
+    "description": "Hebrew letters. micro:bit (V2) only",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -17,5 +17,7 @@
     "public": true,
     "supportedTargets": [
         "microbit"
-    ]
+    ],
+    "icon": "https://github.com/shahart/heb-microbit/blob/main/icon.png?raw=true"
+
 }
