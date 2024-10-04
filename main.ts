@@ -161,7 +161,6 @@ namespace hebrew {
      * Display text on the display, one character at a time. If the string fits on the screen (i.e. is one letter), does not scroll.
      * @param text the text to scroll on the screen, eg: "Hello!"
      */
-    //% help=hebrew-showstring
     //% blockId=hebrew_show_string
     //% block="show string %text"
     export function showString(text: string): void {
