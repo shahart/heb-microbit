@@ -3,6 +3,9 @@
     "version": "1.0.8",
     "description": "Hebrew letters. micro:bit (V2) only",
     "license": "MIT",
+    "disablesVariants": [
+        "mbdal"
+    ],
     "dependencies": {
         "core": "*"
     },
