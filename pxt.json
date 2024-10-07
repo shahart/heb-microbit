@@ -3,13 +3,17 @@
     "version": "1.0.8",
     "description": "Hebrew letters. micro:bit (V2) only",
     "license": "MIT",
+    "disablesVariants": [
+        "mbdal"
+    ],
     "dependencies": {
         "core": "*"
     },
     "files": [
         "README.md",
         "main.ts",
-        "_locales/he/heb-strings.json"
+        "_locales/he/hebrew-strings.json",
+        "_locales/he/hebrew-jsdoc-strings.json"
     ],
     "testFiles": [
         "test.ts"
@@ -17,7 +21,5 @@
     "public": true,
     "supportedTargets": [
         "microbit"
-    ],
-    "icon": "https://github.com/shahart/heb-microbit/blob/main/icon.png?raw=true"
-
+    ]
 }
