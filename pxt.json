@@ -1,6 +1,6 @@
 {
     "name": "hebrew",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Hebrew letters. micro:bit (V2) only",
     "license": "MIT",
     "disablesVariants": [
