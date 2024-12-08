@@ -1,3 +1,5 @@
+[![CI Status](https://github.com/shahart/heb-microbit/workflows/MakeCode/badge.svg)](https://github.com/shahart/heb-microbit/actions)
+
 # hebrew
 ---
 This library make it possible to show characters of Hebrew.
