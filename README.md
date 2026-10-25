@@ -37,3 +37,12 @@ MIT
 ## Supported targets
 
 * for PXT/micro:bit
+
+```
+npm i -g pxt
+pxt target microbit
+pxt install
+pxt build
+pxt test
+pxt serve
+```

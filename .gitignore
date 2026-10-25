@@ -7,3 +7,4 @@ projects
 *.db
 *.tgz
 main.js
+.pxt/

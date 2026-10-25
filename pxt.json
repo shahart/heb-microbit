@@ -3,11 +3,9 @@
     "version": "1.0.10",
     "description": "Hebrew letters. micro:bit (V2) only",
     "license": "MIT",
-    "disablesVariants": [
-        "mbdal"
-    ],
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "microphone": "*"
     },
     "files": [
         "README.md",
@@ -21,5 +19,8 @@
     "public": true,
     "supportedTargets": [
         "microbit"
+    ],
+    "disablesVariants": [
+        "mbdal"
     ]
 }
